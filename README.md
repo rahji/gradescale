@@ -1,3 +1,5 @@
+![51702347529_bbf1ac2aa4_w](https://github.com/user-attachments/assets/70a835f4-a736-4dcd-ba11-a6e576e82261)
+
 # gradescale
 
 I don't like grading based on percentages. It's easier for me to come up 
@@ -14,11 +16,7 @@ Otherwise, you can just copy/paste it into your syllabus. (Everyone uses markdow
 
 ## Installation
 
-The easiest way to install is to download the appropriate archive file from the
-[Releases](https://github.com/rahji/gradescale/releases/latest) page, place the `gradescale` binary  
-[somewhere in your path](https://zwbetz.com/how-to-add-a-binary-to-your-path-on-macos-linux-windows/), 
-and run it from your terminal (eg: Terminal.app in MacOS or 
-[Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-us&gl=us&rtc=1))
+The easiest way to install is to download the appropriate archive file from the [Releases](https://github.com/rahji/gradescale/releases/latest) page, place the `gradescale` binary [somewhere in your path](https://zwbetz.com/how-to-add-a-binary-to-your-path-on-macos-linux-windows/), and run it from your terminal (eg: Terminal.app in MacOS or [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-us&gl=us&rtc=1))
 
 **OR** If you have `go` installed you can clone this repo and run `make build`
 
@@ -45,3 +43,8 @@ Flags:
 ## Screen Capture
 
 ![Made with VHS](https://vhs.charm.sh/vhs-3atANCnHGe1xRK5GfGiExO.gif)
+
+## Credits
+
+Image by <https://www.flickr.com/photos/194356589@N04/51702347529/in/photostream/>
+
