@@ -19,68 +19,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-
 package main
 
-import (
-	"fmt"
-	"math"
-	"os"
-	"strconv"
-)
-
-// gradescale
-// takes a maximum number of points and produces a letter grade scale
-// the new scale is based on the FSU grading scale but is proportional to the new max
-// while the original points are fractional, the new scale are rounded integers
-
-type grade struct {
-	Letter string
-	Min    float64
-}
-
-var scale = []grade{
-	{"A", 93.5},
-	{"A-", 89.5},
-	{"B+", 86.5},
-	{"B", 82.5},
-	{"B-", 79.5},
-	{"C+", 76.5},
-	{"C", 72.5},
-	{"C-", 69.5},
-	{"D+", 66.5},
-	{"D", 62.5},
-	{"D-", 59.5},
-	{"F", 0},
-}
+import "github.com/rahji/gradescale/cmd"
 
 func main() {
-
-	if len(os.Args) < 2 {
-		fmt.Println("Usage: gradescale MAXPOINTS")
-		os.Exit(1)
-	}
-
-	max, err := strconv.ParseFloat(os.Args[1], 64)
-	if err != nil {
-		fmt.Println("Argument must be a whole number")
-		os.Exit(1)
-	}
-
-	fmt.Println("| Letter | Low | High |")
-	fmt.Println("| :----- | :-- | :--- |")
-
-	for i, g := range scale {
-
-		thismin := math.Round((float64(max) * g.Min) / 100)
-
-		if i == 0 {
-			fmt.Printf("| %s | ≥ %.0f | ≤ %.0f |\n", g.Letter, thismin, max)
-			continue
-		}
-
-		thismax := math.Round((float64(max) * scale[i-1].Min) / 100)
-
-		fmt.Printf("| %s | ≥ %.0f | < %.0f |\n", g.Letter, thismin, thismax)
-	}
+	cmd.Execute()
 }

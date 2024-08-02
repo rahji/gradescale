@@ -1,0 +1,26 @@
+scale:
+  - Letter: "A"
+    Min: 93.5
+  - Letter: "A-"
+    Min: 89.5
+  - Letter: "B+"
+    Min: 86.5
+  - Letter: "B"
+    Min: 82.5
+  - Letter: "B-"
+    Min: 79.5
+  - Letter: "C+"
+    Min: 76.5
+  - Letter: "C"
+    Min: 72.5
+  - Letter: "C-"
+    Min: 69.5
+  - Letter: "D+"
+    Min: 66.5
+  - Letter: "D"
+    Min: 62.5
+  - Letter: "D-"
+    Min: 59.5
+  - Letter: "F"
+    Min: 0
+
