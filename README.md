@@ -2,6 +2,8 @@
 
 # gradescale
 
+Note: Maybe use [syllabuster](https://github.com/rahji/syllabuster) instead :)
+
 I don't like grading based on percentages. It's easier for me to come up 
 with an integer number of points for each assignment/task and sum them to arrive
 at a total number of available points for the semester. 
